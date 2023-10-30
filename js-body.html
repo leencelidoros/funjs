@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js in body</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <p class="h3">Demo JavaScript in Body</p>
+                    </div>
+                    <div class="card-body">
+                        <P class="card-title" id="demo"></P>
+                        <button type="button" class="btn btn-primary" onclick="myFunction()">Try it</button>
+
+                        <script>
+                        function myFunction() {
+                        document.getElementById("demo").innerHTML = "Paragraph changed.";
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

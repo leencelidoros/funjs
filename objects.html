@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card_title">Objects</p>
+                        <p id="demo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const person = new Object();
+            person.firstName="John";
+            person.lastName="Doe";
+            person.age=24;
+            person.eyeColor="blue";
+        document.getElementById("demo").innerHTML =
+        person.firstName + " is " + person.age + " years old.";
+    </script>
+</body>
+</html>

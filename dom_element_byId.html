@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM elements By Id</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="intro">Finding HTML Elements by Id</p>
+                        <p>This example demonstrates the <b>getElementsById</b> method.</p>
+                        <p id="demo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const element = document.getElementById("intro");
+        document.getElementById("demo").innerHTML = 
+        "The text from the intro paragraph is: " + element.innerHTML;
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

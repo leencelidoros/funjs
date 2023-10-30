@@ -1,0 +1,33 @@
+<!-- inner HTml o access an HTML element, JavaScript can use the document.getElementById(id) method. -->
+<!-- For testing purposes, it is convenient to use document.write(): -->
+<!-- Using window.alert()
+You can use an alert box to display data: -->
+<!-- you can call the console.log() method in the browser to display data. -->
+<!-- window.print() method in the browser to print the content of the -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Outputs</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="h4 text-center">My First Js Project</p>
+                        <p id="demo"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+</body>
+</html>

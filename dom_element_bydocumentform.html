@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Get Element By Document Forms</div>
+                    <div class="card-body">
+                        <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+                        <form id="frm1" action="/dom_element_bydocumentform.html">
+                            First Name:<input class="form-control"name="fname" value="Donald" type="text" aria-label="default input example">
+                            Last name: <input class="form-control" aria-label="default input example" type="text" name="lname" value="Duck">
+                            <button type="submit" class="btn btn-primary">submit</button>
+                        </form> 
+
+                        <p>These are the values of each element in the form:</p>
+
+                        <p id="demo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
